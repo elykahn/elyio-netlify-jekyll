@@ -13,13 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jekyll Netlify Boilerplate
-email: your-email@example.com
+title: ely.io
+email: ely.kahn@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
 baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://blog.ely.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
 permalink: /blog/:title
@@ -64,9 +62,9 @@ kramdown:
 # Include in processing (e.g. Netlify directives)
 # Uncomment before use
 
-#include:
-#  - _redirects
-#  - _headers
+include:
+  - _redirects
+  - _headers
 
 # Exclude from processing.
 # The following items will not be processed.
