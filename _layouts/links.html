@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+{% include page-intro.html %}
+{{ content }}
+<section>
+  <h3>Links</h3>
+  <ul>
+    {% for link in site.links %}
+    
+      <li>
+        <h4><a href="{{ link.url }}">{{ link.title }}</a></h4>
+        <time datetime="{{ link.date }}">
+          <small>
+            <strong>{{ link.date | date_to_string }}</strong>
+            {% if author %}
+              by {{ author.name }}
+            {% endif %}
+          </small>
+        </time>
+        {{ link.excerpt | strip_newlines | truncate: 180 }}
+      </li>
+    {% endfor %}
+  </ul>
