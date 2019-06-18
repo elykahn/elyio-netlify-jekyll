@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: links
 title: Links
 permalink: /links
 section: links
