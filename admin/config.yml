@@ -22,7 +22,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "select"
         options:
           - { label: "ely kahn", value: "ely_kahn" }
-          - { label: "John Doe", value: "john_doe" }
+          - { label: "Guest Post", value: "guest_post" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:MM:SS"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Page"
     folder: "pages"
     sort: "title:asc"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
